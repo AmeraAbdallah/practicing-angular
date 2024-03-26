@@ -1,0 +1,16 @@
+<section class="add-todo-section">
+  <div class="add-todo-input">
+    <input
+      placeholder="What to do?"
+      class="text-field"
+      name="todo"
+      [(ngModel)]="todo"
+      type="text"
+      [ngClass]="error != '' ? 'error-input' : ''"
+    />
+    <button (click)="onSubmit()">Submit</button>
+  </div>
+  @if(error != "") {
+  <p class="error-warning">This field is required</p>
+  }
+</section>

@@ -1,0 +1,10 @@
+<ul class="todo-list">
+  @for(todo of todoService.todossignal(); track todo.id) {
+  <div class="list-item" (click)="toggleCompleted(todo.id)">
+    <input type="checkbox" [(ngModel)]="todo.completed" />
+    <li [ngClass]="todo.completed ? 'completed' : ''">{{ todo.todo }}</li>
+  </div>
+
+  }
+  <!-- <li *ngFor="let todo of todos">{{ todo }}</li> -->
+</ul>
