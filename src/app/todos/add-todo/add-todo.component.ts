@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
+
 import { TodoService } from '../todo.service';
-import { FormsModule } from '@angular/forms';
-import { CommonModule } from '@angular/common';
+import { SHARED } from '../../shared';
 
 @Component({
   selector: 'app-add-todo',
   standalone: true,
-  imports: [FormsModule, CommonModule],//[FormsModule],
+  imports: [SHARED],
   templateUrl: './add-todo.component.html',
   styleUrl: './add-todo.component.css',
   exportAs: ''

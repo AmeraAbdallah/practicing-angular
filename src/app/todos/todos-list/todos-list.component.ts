@@ -1,16 +1,14 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { TodoService } from '../todo.service';
-import { Subscription, map, tap } from 'rxjs';
-import { Todo } from '../todo';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { Subscription } from 'rxjs';
 
+import { TodoService } from '../todo.service';
+import { SHARED } from '../../shared';
 
 
 @Component({
   selector: 'app-todos-list',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [SHARED],
   templateUrl: './todos-list.component.html',
   styleUrl: './todos-list.component.css'
 })

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { SHARED } from '../shared';
 
 @Component({
   selector: 'app-welcome',
   standalone: true,
-  imports: [],
+  imports: [SHARED],
   templateUrl: './welcome.component.html',
   styleUrl: './welcome.component.css'
 })
